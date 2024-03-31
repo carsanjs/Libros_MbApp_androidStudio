@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Libros_MbApp</string>
+    <string name="documento">Documento</string>
+    <string name="usuario">Usuario</string>
+    <string name="apellido">Apellidos</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="clave">Contraseña</string>
+    <string name="boquer">Boquer</string>
+    <string name="ytc">Ya tienes cuenta?</string>
+
+    <string name="cd">Codigo</string>
+    <string name="nlb">Nombre del libro</string>
+    <string name="aut">Autor</string>
+    <string name="name_aut">Nombre del Autor</string>
+    <string name="fh_public">Fecha de Publicacion</string>
+    <string name="obs">Observacion</string>
+    <string name="valor">Precio</string>
+
+
+    <string name="agg">Agregar</string>
+    <string name="edit">Editar</string>
+    <string name="delet">Eliminar</string>
+    <string name="update">Actualizar</string>
+    <string name="button">button</string>
+</resources>

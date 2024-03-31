@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="372dp"
+        android:layout_height="285dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/boypc" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="380dp"
+        android:layout_height="344dp"
+        android:background="@drawable/border_top_lefright"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="335dp"
+        android:layout_height="118dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:text="Que  esperas para tener una cuenta"
+            android:textAlignment="textStart"
+            android:textColor="#EBE6E6"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accede al libro de mas de 50+ Millones y a varios idiomas"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="345dp"
+        android:layout_height="178dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.927">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comience la prueba gratuita"
+            android:textColor="#56A259"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/idmastarde"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnredondowhite"
+            android:backgroundTint="#E0E0E0"
+            android:text="Mas tarde"
+            android:textColor="#56A259"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

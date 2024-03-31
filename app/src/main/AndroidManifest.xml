@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrdenarProducto"
+            android:exported="false" />
+        <activity
+            android:name=".editar"
+            android:exported="false" />
+        <activity
+            android:name=".ListarLibros"
+            android:exported="false" />
+        <activity
+            android:name=".eliminar"
+            android:exported="false" />
+        <activity
+            android:name=".agregarlibros"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_index_home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_registro"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_inicio_sesion"
+            android:exported="false" />
+        <activity
+            android:name=".olvidopassword"
+            android:exported="false" />
+        <activity
+            android:name=".GpsAc"
+            android:exported="false" />
+        <activity
+            android:name=".CamaraAc"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_index_hm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.libros_mbapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+    </application>
+
+</manifest>
